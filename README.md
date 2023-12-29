@@ -16,8 +16,7 @@ import imblearn
 import CCRS
 loaded_model = pickle.load('./data/IS_RF_lessFea.pkl')
 Traindata = pd.read_csv('./data/CIS_age.csv')
-# Naturally, the test data in this case can be replaced with the user's own data.
-X_test = Traindata.iloc[:5]
+X_test = $INPUT_DATA
 scores = loaded_model.predict_proba(X_test)
 value = scores[:,1]
 stroke_risk_group = risk_label(value)
@@ -28,7 +27,7 @@ result = pd.DataFrame({'stroke risk group': stroke_risk_group,'stroke relative r
 
 Features of the CIS model:
 
-![Features](xxx)
+![Features](https://github.com/VVictorChen/Stroke/blob/main/Model/CIS%20features.png)
 
 Output:
 
@@ -42,4 +41,10 @@ Output:
 
 How to cite:
 
-Chen, B., Ruan, L., Yang, L., Zhang, Y., Lu, Y., Sang, Y., Jin, X., Bai, Y., Zhang, C., and Li, T. (2022). Machine learning improves risk stratification of coronary heart disease and stroke. Ann Transl Med 10, 1156. 10.21037/atm-22-1916.
+Chen, B., Ruan, L., Yang, L., Zhang, Y., Lu, Y., Sang, Y., Jin, X., Bai, Y., Zhang, C., and Li, T. (2022). Machine learning improves risk stratification of coronary heart disease and stroke. Ann Transl Med 10, 1156. 10.21037/atm-22-1916
+        
+        
+        
+        
+        
+        .
