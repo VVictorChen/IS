@@ -3,7 +3,7 @@ Work in the field of stroke
 
 Our team has developed a machine learning-based model for risk stratification for ischemic stroke, which is now available for download. You can download the [CCRS](https://pypi.org/project/CCRS/) package as well. 
 
-![Figure](https://www.cdc.gov/stroke/about.htm#)
+![Figure](https://www.cdc.gov/stroke/images/Stroke-Medical-Illustration.jpg?_=77303)
 
 Example:
 
@@ -25,6 +25,10 @@ df = pd.DataFrame({'y_pred': scores[:,1],'Age':X_test.Age})
 stroke_RRS = RRScore(df,Traindata,mean=51.5,sd=10.8)
 result = pd.DataFrame({'stroke risk group': stroke_risk_group,'stroke relative risk rank':stroke_RRS})
 ```
+
+Features of the CIS model:
+
+![Features](xxx)
 
 Output:
 
